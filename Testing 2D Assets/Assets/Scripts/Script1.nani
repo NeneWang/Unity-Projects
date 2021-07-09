@@ -1,2 +1,27 @@
 Hello World!
+n.Default: wtf
+n.Happy: I am happy
+n: Choose something
+@goto .Choices0.1
+
+#Choices0.1
+
+@choice "Minecraft" goto:.Set0.1
+@choice "This actually takes you to minecraft world" goto:.Minecraft0.1
+
+@stop
+
+#Set0.1
+A point will be added
+@set var1=1
+@print "variable is 1 " if:var1==1
+
+@print "variable is bigger than 0" if:var1>=0
+
+@stop
+
+
+#Minecraft0.1
+This is Minecraft world!
+
 @stop
